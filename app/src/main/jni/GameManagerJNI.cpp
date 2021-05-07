@@ -99,3 +99,24 @@ Java_com_example_login_GameActivity_getQuestionsAmount(JNIEnv *env, jobject thiz
     result << "/25";
     return env->NewStringUTF(result.str().c_str());
 }
+
+extern "C"
+JNIEXPORT jint JNICALL
+Java_com_example_login_GameActivity_getQuestionsTotal(JNIEnv *env, jobject thiz)
+{
+    return gm.game->results->get_total_questions();
+}
+
+extern "C"
+JNIEXPORT jint JNICALL
+Java_com_example_login_GameActivity_getQuestionsCorrect(JNIEnv *env, jobject thiz)
+{
+    return gm.game->results->get_correct_questions();
+}
+
+extern "C"
+JNIEXPORT jint JNICALL
+Java_com_example_login_GameActivity_getQuestionsIncorrect(JNIEnv *env, jobject thiz)
+{
+    return gm.game->results->get_incorrect_questions();
+}
