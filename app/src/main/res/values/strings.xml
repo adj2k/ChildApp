@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Login</string>
+    <string name="app_name">L3ARN</string>
     <string name="numbers_button">Numbers</string>
     <string name="letters_button">Letters</string>
     <string name="start_button">START</string>

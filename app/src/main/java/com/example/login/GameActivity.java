@@ -56,7 +56,7 @@ public class GameActivity extends AppCompatActivity
                 boolean correct = submitAnswer(submissionBoxInput.getText().toString());
 
                 if (correct){
-                    Toast.makeText(getApplicationContext(), "Correct answer", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Correct answer", Toast.LENGTH_SHORT).show();
                     correctQuestion();
                     if (isGameOver())
                     {
@@ -65,7 +65,7 @@ public class GameActivity extends AppCompatActivity
                     }
                 }
                 else{
-                    Toast.makeText(getApplicationContext(), "Incorrect answer", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Incorrect answer", Toast.LENGTH_SHORT).show();
                     incorrectQuestion();
                     if (isGameOver()){
                         endGame();

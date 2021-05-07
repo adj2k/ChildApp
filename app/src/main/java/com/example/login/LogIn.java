@@ -49,7 +49,6 @@ public class LogIn extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-               // validate(Username.getText().toString(), Password.getText().toString());
                 String username = Username.getText().toString();
                 String password = Password.getText().toString();
                 cursor = db.rawQuery(" SELECT * FROM " + Database.TABLE_NAME + " WHERE " + Database.COL_4 + " =? AND " + Database.COL_5 + " =? ", new String[]{username, password});
@@ -88,40 +87,4 @@ public class LogIn extends AppCompatActivity
         });
 
     }
-
-//    private void validate(String enteredUserName, String enteredPassword)
-//    {
-//        if((enteredUserName.equals("Admin")) && (enteredPassword.equals("1234")))
-//        {
-//
-//            Intent toHomeScreen = new Intent (MainActivity.this, HomeScreen.class);
-//            startActivity(toHomeScreen);
-//        }
-//        else
-//        {
-//            counter--;
-//
-//            Context context = getApplicationContext();
-//            CharSequence text = "Incorrect username or password";
-//            int duration = Toast.LENGTH_SHORT;
-//            Toast toast = Toast.makeText(context, text, duration);
-//            //toast.setGravity(Gravity.TOP,0,250);
-//            toast.show();
-//
-//            if(counter == 0)
-//            {
-//
-//                context = getApplicationContext();
-//                text = "Your account has been locked due to too many failed attempts.";
-//                duration = Toast.LENGTH_SHORT;
-//
-//                toast = Toast.makeText(context, text, duration);
-//                toast.show();
-//                Login.setEnabled(false);
-//            }
-//        }
-//    }
-
-
-
 }
