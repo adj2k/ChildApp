@@ -36,15 +36,15 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button1:
-                Intent intent = new Intent(getApplicationContext(), Game.class);
+                Intent intent = new Intent(getApplicationContext(), ChooseGameActivity.class);
                 startActivity(intent);
                 break;
             case R.id.button2:
-                intent = new Intent(getApplicationContext(),Statistics.class);
+                intent = new Intent(getApplicationContext(), levelTracking.class);
                 startActivity(intent);
                 break;
             case R.id.button3:
-                intent = new Intent(getApplicationContext(), levelTracking.class);
+                intent = new Intent(getApplicationContext(),Statistics.class);
                 startActivity(intent);
                 break;
             case R.id.button4:

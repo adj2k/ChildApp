@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Login</string>
+    <string name="numbers_button">Numbers</string>
+    <string name="letters_button">Letters</string>
+    <string name="start_button">START</string>
+    <string name="choose_an_age_range">Choose an age range</string>
+    <string name="choose_an_game_type">Choose an game type</string>
+    <string name="_5_to_7">5 to 7</string>
+    <string name="_7_to_8">7 to 8</string>
+    <string name="_8_to_10">8 to 10</string>
+    <string name="Answer_Submission_Box_Hint">Type answer here.</string>
+    <string name="question_what_is_5_5">Question: What is 5 + 5?</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_game">GameActivity</string>
 </resources>
