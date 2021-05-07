@@ -66,7 +66,8 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.logOut:
-                Toast.makeText(this, "log out", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(HomeScreen.this, LogIn.class);
+                startActivity(intent);
                 return true;
 
             default:
