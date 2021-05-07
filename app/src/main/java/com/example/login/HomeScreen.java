@@ -40,11 +40,11 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
                 startActivity(intent);
                 break;
             case R.id.button2:
-                intent = new Intent(getApplicationContext(),Statistics.class);
+                intent = new Intent(getApplicationContext(), levelTracking.class);
                 startActivity(intent);
                 break;
             case R.id.button3:
-                intent = new Intent(getApplicationContext(), levelTracking.class);
+                intent = new Intent(getApplicationContext(),Statistics.class);
                 startActivity(intent);
                 break;
             case R.id.button4:
