@@ -15,7 +15,7 @@
         <activity android:name=".ChooseGameActivity"></activity>
         <activity android:name=".GameActivity"></activity>
         <activity android:name=".LogIn">
-        <activity android:name=".LevelTrackingModel"></activity>
+        <activity android:name=".MainActivity"></activity>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
